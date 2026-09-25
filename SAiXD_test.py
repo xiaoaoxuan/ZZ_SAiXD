@@ -50,7 +50,7 @@ test = Model_Loader(model_path,"rknn")
 test.Model_Init()
 
 while 1:
-    
+    pass
     pass    
 
 
