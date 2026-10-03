@@ -1,17 +1,19 @@
 import sys
 
 #摄像头id
-ID_CAM = "/dev/video0"
+class Config_Camera:
+    ID_CAM = "/dev/video0"
 
 
 
 #模型
-PATH_DEFAULT_MODEL_RKNN = sys.path[0] + "/rknnModel/yolov5s_relu_tk2_RK3588_i8.rknn"
-PATH_DEFAULT_MODEL_ONNX = ""
+class Config_Model:
+    PATH_DEFAULT_MODEL_RKNN = sys.path[0] + "/ModelFile/yolov5s_relu_tk2_RK3588_i8.rknn"
+    PATH_DEFAULT_MODEL_ONNX = sys.path[0] + "/ModelFile/1.onnx"
 
 
 #Servo 
-class Servo:
+class Config_Servo:
     CONUT = 2
     DEFAULT_SPEED_MAX = 1000
     DEFAULT_SPEED_MIN = 10
